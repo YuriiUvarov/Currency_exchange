@@ -25,7 +25,7 @@ class Migration(migrations.Migration):
                 ('is_active', models.BooleanField(default=True)),
                 ('is_staff', models.BooleanField(default=False)),
                 ('is_superuser', models.BooleanField(default=False)),
-                ('image', models.ImageField(blank=True, null=True, upload_to='pics/', 
+                ('image', models.ImageField(blank=True, null=True, upload_to='pics/',
                                             validators=[django.core.validators.FileExtensionValidator(['jpg', 'png'])],
                                             verbose_name='Фото')),
                 ('hide_email', models.BooleanField(default=True)),
